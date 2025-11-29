@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="8.147" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-26T12:31:09.996106100Z">
-<testcase classname="Title of your feature" name="Login to a website - #1.1" time="7.822">
+<testsuite name="Cucumber" time="6.101" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-29T06:26:05.266344300Z">
+<testcase classname="Title of your feature" name="Login to a website - #1.1" time="5.864">
 <system-out><![CDATA[
 Given user is on login page.................................................passed
 When user enters "student" and "Password123" on the login page..............passed

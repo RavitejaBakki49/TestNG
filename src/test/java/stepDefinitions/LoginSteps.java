@@ -46,7 +46,6 @@ public class LoginSteps {
         driver = DriverManager.getDriver();
 		login = new LoginPage(driver);
 		login.loginPage();
-	    
 	}
 	@When("user enters {string} and {string} on the login page")
 	public void user_enters_and_on_the_login_page(String user, String pass) {	

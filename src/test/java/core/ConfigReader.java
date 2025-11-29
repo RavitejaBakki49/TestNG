@@ -13,18 +13,20 @@ public class ConfigReader{
 	
 	
 	
-	static Properties q = new Properties();
-	public void fileReading() throws FileNotFoundException,IOException {
-			FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
-			q.load(fis);  
-	}
-	
-	public String get(String key) throws IOException {	
-		
-		fileReading();
-		return q.getProperty(key);
-		
-	}
+	static Properties prop = new Properties();
+
+    static {
+        try {
+            FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
+            prop.load(fis);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String get(String key) {
+        return prop.getProperty(key);
+    }
 	
 	
 	

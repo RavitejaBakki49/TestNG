@@ -17,8 +17,8 @@ public class DriverManager {
     public static WebDriver getDriver() throws IOException {
     	//String browser = System.getProperty("browser", "edge");
     	
-    	ConfigReader configReader = new ConfigReader();
-    	String browser = configReader.get("browser");
+    	
+    	String browser = ConfigReader.get("browser");
     	 if (driver == null) {
         switch (browser.toLowerCase()) {
 
@@ -52,7 +52,7 @@ public class DriverManager {
     public static void quitDriver() {
         if (driver != null) {
             driver.quit();
-            //driver = null;
+            driver = null;
         }
     }
 	
