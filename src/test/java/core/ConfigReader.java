@@ -10,7 +10,10 @@ import java.util.Properties;
 public class ConfigReader{
 
 	
-	Properties q = new Properties();
+	
+	
+	
+	static Properties q = new Properties();
 	public void fileReading() throws FileNotFoundException,IOException {
 			FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
 			q.load(fis);  
